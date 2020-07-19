@@ -1,14 +1,18 @@
 import React, { useContext } from 'react';
 import { Card, Tag, Row, Col, Button } from 'antd';
 import { PlusOutlined, MinusOutlined} from '@ant-design/icons';
-import { Number, Center, Btn }from './styles'
+import { Number, Center, } from './styles'
 import Context from '../../context'
 
 const NumberRaffles = () => {
+  const formatter = new Intl.NumberFormat('es-PE', {
+    style: 'currency',
+    currency: 'PEN',
+  });
   const { buyer, setBuyer } = useContext(Context)
   const handleClick = type => {
     if(type === 'minus'){
-      if (buyer.quantity !== 0) {
+      if (buyer.quantity > 1) {
         setBuyer({ ...buyer, quantity: buyer.quantity - 1})
       }
     }
@@ -28,7 +32,7 @@ const NumberRaffles = () => {
         </Col>
         <Col span={24}>
           <Center>
-          <Tag color="#3F5AA6">Total: S/ {buyer.quantity * 2}</Tag>
+            <Tag color="#3F5AA6">Total: { formatter.format(buyer.quantity * 2) }</Tag>
           </Center>
         </Col>
       </Row>

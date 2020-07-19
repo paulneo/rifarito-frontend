@@ -5,27 +5,29 @@ import StepTwo from '../Components/StepTwo/brain'
 import SuccessfulRegistration from '../Components/SuccessfulRegistration/brain'
 import MyTickets from '../Components/MyTickets/'
 import Ticket from '../Components/Ticket'
+import Layout from './Layout'
 const RouterApp = () => {
   return(
     <Router>
-      <Switch>
-        <Route path="/">
-          <StepOne />
-        </Route>
-        {/* 
-        <Route path="/stepTwo">
-          <StepTwo />
-        </Route> */}
-        {/* <Route path="/">
-          <SuccessfulRegistration />
-        </Route> */}
-        {/* <Route path="/">
-          <MyTickets />
-        </Route> */}
-        {/* <Route path="/">
-          <Ticket />
-        </Route> */}
-      </Switch>
+      <Layout>
+        <Switch>
+          <Route path="/registerTickets">
+            <StepTwo />
+          </Route>
+          <Route path="/successful">
+            <SuccessfulRegistration />
+          </Route>
+          <Route path="/Ticket">
+            <Ticket />
+          </Route>
+          <Route path="/checkTickets">
+            <MyTickets />
+          </Route>
+          <Route path="/">
+            <StepOne />
+          </Route>
+        </Switch>
+      </Layout>
     </Router>
   )
 }

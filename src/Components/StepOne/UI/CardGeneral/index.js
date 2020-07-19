@@ -3,11 +3,8 @@ import { Card, Row, Col, Button, } from 'antd';
 import PersonalInformation from '../PersonalInformation'
 import NumberRaffles from '../NumberRaffles'
 import MakeDeposit from '../MakeDeposit'
-import {  Center } from './style'
+import { Center } from './style'
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 } from "react-router-dom";
 import Deposit from '../Deposit'
@@ -37,10 +34,9 @@ const CardGeneral = () => {
           <Center>
             <Link to="/stepTwo">
               <Button type="primary" shape="round" size={'middle'} onClick={onClickOperation}>
-                YA REALIZÉ LA OPERACIÓN
-            </Button>
+                Reservar
+              </Button>
             </Link>
-           
           </Center>
         </Col>
       </Row>

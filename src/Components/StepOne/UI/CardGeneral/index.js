@@ -1,10 +1,22 @@
 import React from 'react';
-import { Card, Row, Col, } from 'antd';
+import { Card, Row, Col, Button, } from 'antd';
 import PersonalInformation from '../PersonalInformation'
 import NumberRaffles from '../NumberRaffles'
 import MakeDeposit from '../MakeDeposit'
-import { Btn, Center } from './style'
+import {  Center } from './style'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 const CardGeneral = () => {
+
+  const onClickOperation = () => {
+
+  }
+
   return (
     <Card title="COMPRAR RIFA">
       <Row gutter={[16, 16]}>
@@ -19,9 +31,12 @@ const CardGeneral = () => {
         </Col>
         <Col span={24}>
           <Center>
-            <Btn type="primary" shape="round" size={'middle'} >
-              YA REALIZÉ LA OPERACIÓN
-            </Btn>
+            <Link to="/stepTwo">
+              <Button type="primary" shape="round" size={'middle'} onClick={onClickOperation}>
+                YA REALIZÉ LA OPERACIÓN
+            </Button>
+            </Link>
+           
           </Center>
         </Col>
       </Row>

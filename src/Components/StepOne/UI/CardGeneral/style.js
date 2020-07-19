@@ -6,9 +6,3 @@ export const Center = styled.div`
   align-items:center;
   justify-content:center;
 `
-
-export const Btn = styled(Button)`
-  background: #3F5AA6;
-  border-color: #3F5AA6;
-  width:300px;
-`

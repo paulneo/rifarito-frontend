@@ -1,10 +1,9 @@
 import React from 'react';
+import CardGeneral from '../UI/CardGeneral'
 
 const StepOne = () => {
   return (
-    <div>
-      
-    </div>
+    <CardGeneral />
   );
 };
 

@@ -9,9 +9,10 @@ const RouterApp = () => {
   return(
     <Router>
       <Switch>
-        {/* <Route path="/">
+        <Route path="/">
           <StepOne />
         </Route>
+        {/* 
         <Route path="/stepTwo">
           <StepTwo />
         </Route> */}
@@ -21,9 +22,9 @@ const RouterApp = () => {
         {/* <Route path="/">
           <MyTickets />
         </Route> */}
-        <Route path="/">
+        {/* <Route path="/">
           <Ticket />
-        </Route>
+        </Route> */}
       </Switch>
     </Router>
   )

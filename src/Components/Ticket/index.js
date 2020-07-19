@@ -1,41 +1,47 @@
 import React from 'react';
 import { Card } from 'antd';
-import { Content } from './style'
+import { Content, Head, Body, SubTitle, Title, Double, InfoDouble, Footer, TextFooter, Trapeze, TitleInfo } from './style'
 
 const Ticket = () => {
   return (
     <Card title="Ticket">
-      <p>ALBERGUE DE PERRITOS</p>
-      <Content >
-        <div>GRAN RIFA VIRTUAL</div>
-        <div>
-          <p>Nombre</p>
-          <p>JUAN MENDOZA VARGAS</p>
-        </div>
-        <div>
+      <Title>ALBERGUE DE PERRITOS</Title>
+      <Content>
+        <Head>LA CASA DE AMELIE AREQUIPA</Head>
+        <Body>
           <div>
-            <p>Fecha de Sorteo</p>
-            <p>31 DE JULIO</p>
+            <TitleInfo>Nombre</TitleInfo>
+            <SubTitle>JUAN MENDOZA VARGAS</SubTitle>
           </div>
+          <Double>
+            <InfoDouble>
+              <TitleInfo>Fecha de Sorteo</TitleInfo>
+              <SubTitle>31 DE JULIO</SubTitle>
+            </InfoDouble>
+            <InfoDouble>
+              <TitleInfo>Hora</TitleInfo>
+              <SubTitle>7:00PM</SubTitle>
+            </InfoDouble>
+          </Double>
+          <Double>
+            <InfoDouble>
+              <TitleInfo>Valor Rifa</TitleInfo>
+              <SubTitle>S/ 2</SubTitle>
+            </InfoDouble>
+            <InfoDouble>
+              <TitleInfo>Celular</TitleInfo>
+              <SubTitle>989411606</SubTitle>
+            </InfoDouble>
+          </Double>
           <div>
-            <p>Hora</p>
-            <p>7:00PM</p>
+            <TitleInfo>Fecha de Compra</TitleInfo>
+            <SubTitle>19/7/2020</SubTitle>
           </div>
-        </div>
-        <div>
-          <div>
-            <p>Valor Rifa</p>
-            <p>S/ 2</p>
-          </div>
-          <div>
-            <p>Celular</p>
-            <p>989411606</p>
-          </div>
-        </div>
-        <div>
-          <p>Fecha de Compra</p>
-          <p>19/7/2020</p>
-        </div>
+        </Body>
+        <Footer>
+          <TextFooter>GRAN RIFA VIRTUAL</TextFooter>
+          <Trapeze one></Trapeze>
+        </Footer>
       </Content>
     </Card>
   );

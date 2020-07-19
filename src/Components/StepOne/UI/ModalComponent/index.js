@@ -1,6 +1,6 @@
 import React, { useContext} from 'react';
 import { Modal, Button, Card, Collapse  } from 'antd';
-import Context from '../../brain/context'
+import Context from '../../../StepOne/brain/context'
 import BCP from '../../../../assets/imgs/BCP-Transferencia.jpg';
 import { ContentImg} from './style'
 const { Panel } = Collapse;

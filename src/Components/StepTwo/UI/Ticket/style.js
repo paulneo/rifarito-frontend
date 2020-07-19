@@ -31,3 +31,8 @@ export const Divider = styled.div`
   background: #EBEEF7;
   margin:10px 0;
 `
+export const Center = styled.div`
+  display:flex;
+  align-items:center;
+  justify-content:center;
+`

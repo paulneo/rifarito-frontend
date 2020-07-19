@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useContext} from 'react';
 import { Card, Upload, Button, Input } from 'antd'
 import { Title, Divider, Question, QuestionText, Text } from './style'
 import { QuestionOutlined } from '@ant-design/icons';
-
+import  Context  from '../../brain/context'
 const Deposit = () => {
+  const { setModal } = useContext(Context)
+
+  const openModal = () => {
+    setModal(true)
+  }
+
   return (
     <Card title='VERIFICACIÓN DE DEPÓSITO / TRANSFERENCIA'>
       <Text>Luego de realizar el depósito o transferencia sube la foto del voucher ó ingresa el número de operación.</Text>
@@ -25,8 +31,8 @@ const Deposit = () => {
         Ó
       </Divider>
       <Question>
-        <Button type="primary" shape="circle" icon={<QuestionOutlined />} size='small'/>
-        <QuestionText>¿En dónde lo encuentro?</QuestionText>
+        <Button onClick={openModal} type="primary" shape="circle" icon={<QuestionOutlined />} size='small'/>
+        <QuestionText onClick={openModal}>¿En dónde lo encuentro?</QuestionText>
       </Question>
     </Card>
   );

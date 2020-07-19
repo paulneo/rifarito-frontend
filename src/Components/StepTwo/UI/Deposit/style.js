@@ -55,4 +55,5 @@ export const QuestionText = styled.p`
   margin:0;
   margin-left:5px;
   font-weight:bold;
+  cursor:pointer;
 `

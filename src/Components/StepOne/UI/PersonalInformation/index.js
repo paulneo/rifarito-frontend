@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Input, Row, Col } from 'antd';
+import { Card, Input, Row, Col, Form } from 'antd';
 import { Title, Text} from './style'
 
 const PersonalInformation = () => {
@@ -8,7 +8,9 @@ const PersonalInformation = () => {
       <Row gutter={[16, 16]}>
         <Col xs={24} sm={24} md={12} ls={12}>
           <Title>Nombre Completo*</Title>
-          <Input placeholder="Ingrese su nombre completo" style={{ width: '100%' }}/>
+          <Form.Item name="name" rules={[{ required: true }]}>
+            <Input />
+          </Form.Item>
         </Col>
         <Col xs={24} sm={24} md={12} ls={12}>
           <Title>Celular*</Title>

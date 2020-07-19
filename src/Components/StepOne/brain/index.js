@@ -6,7 +6,7 @@ import { Form } from 'antd'
 import Context from '../context'
 
 const StepOne = () => {
-  const { form } = useContext(Context)
+  // const { form } = useContext(Context)
   return (
     <Provider>
       <Form>

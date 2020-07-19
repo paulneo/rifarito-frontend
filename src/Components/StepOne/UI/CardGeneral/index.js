@@ -34,7 +34,7 @@ const CardGeneral = () => {
           <Center>
             <Link to="/stepTwo">
               <Button type="primary" shape="round" size={'middle'} onClick={onClickOperation}>
-                Reservar
+                CONFIRMAR OPERACION
               </Button>
             </Link>
           </Center>

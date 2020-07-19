@@ -13,7 +13,6 @@ const MakeDeposit = () => {
             <Number>215 31406116045</Number>
             <Btn  block>Copiar</Btn>
           </Bill>
-          <Text>Monto: S/10.00</Text>
           <Text>Cuenta: Ahorros - Soles</Text>
           <Text>Titular: Magdalena Chicata</Text>
         </Panel>
@@ -22,7 +21,6 @@ const MakeDeposit = () => {
             <Number>215 31406116045</Number>
             <Btn block>Copiar</Btn>
           </Bill>
-          <Text>Monto: S/10.00</Text>
           <Text>Cuenta: Ahorros - Soles</Text>
           <Text>Titular: Magdalena Chicata</Text>
         </Panel>
@@ -31,7 +29,6 @@ const MakeDeposit = () => {
             <Number>215 31406116045</Number>
             <Btn block>Copiar</Btn>
           </Bill>
-          <Text>Monto: S/10.00</Text>
           <Text>Cuenta: Ahorros - Soles</Text>
           <Text>Titular: Magdalena Chicata</Text>
         </Panel>

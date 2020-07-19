@@ -14,7 +14,7 @@ function App({ children }) {
             <Link to='/stepTwo'>Inicio</Link>
           </Menu.Item> */}
           <Menu.Item key="2">
-            <Link to='/'>Comprar Rifa</Link>
+            <Link to='/'>Comprar</Link>
           </Menu.Item>
           <Menu.Item key="3">
             <Link to='/registerTickets'>Registrar números</Link>

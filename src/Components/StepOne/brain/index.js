@@ -1,8 +1,11 @@
 import React from 'react';
 import CardGeneral from '../UI/CardGeneral'
+import { Provider } from '../context'
 const StepOne = () => {
   return (
-    <CardGeneral />
+    <Provider>
+      <CardGeneral />
+    </Provider>
   );
 };
 

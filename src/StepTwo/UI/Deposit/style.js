@@ -10,9 +10,9 @@ export const Title = styled.p`
 
 export const Text = styled.p`
   margin:0px;
-  color:#C7C7C7;
-  font-size:10px;
-  font-weight:bold;
+  color:#3F5AA6;
+  font-size:12px;
+
 `
 
 export const Divider = styled.div`
@@ -41,4 +41,18 @@ export const Divider = styled.div`
     top: 10px;
     right: 0px;
   }
+`
+
+export const Question = styled.div`
+ display:flex;
+ justify-content:center;
+ align-items:center;
+`
+
+export const QuestionText = styled.p`
+  color: #192A59;
+  font-size:12px;
+  margin:0;
+  margin-left:5px;
+  font-weight:bold;
 `

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card, Upload, Button, Input } from 'antd'
-import { Title, Divider } from './style'
+import { Title, Divider, Question, QuestionText, Text } from './style'
 import { QuestionOutlined } from '@ant-design/icons';
 
 const Deposit = () => {
   return (
     <Card title='VERIFICACIÓN DE DEPÓSITO / TRANSFERENCIA'>
-      <p>Luego de realizar el depósito o transferencia sube la foto del voucher ó ingresa el número de operación.</p>
+      <Text>Luego de realizar el depósito o transferencia sube la foto del voucher ó ingresa el número de operación.</Text>
       <Upload
         name="avatar"
         listType="picture-card"
@@ -24,10 +24,10 @@ const Deposit = () => {
       <Divider>
         Ó
       </Divider>
-      <div>
+      <Question>
         <Button type="primary" shape="circle" icon={<QuestionOutlined />} size='small'/>
-        <p>¿En dónde lo encuentro?</p>
-      </div>
+        <QuestionText>¿En dónde lo encuentro?</QuestionText>
+      </Question>
     </Card>
   );
 };

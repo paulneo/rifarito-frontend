@@ -2,6 +2,8 @@ import React from 'react';
 import { Card, Row, Col, } from 'antd';
 import { Btn, Center } from './style'
 import Deposit from '../Deposit'
+import Ticket from '../Ticket'
+
 const CardGeneral = () => {
   return (
     <Card title="Confirmar Operación">
@@ -9,7 +11,9 @@ const CardGeneral = () => {
         <Col span={24}>
           <Deposit />
         </Col>
-        
+        <Col span={24}>
+          <Ticket />
+        </Col>
       </Row>
     </Card>
   );

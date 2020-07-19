@@ -7,6 +7,7 @@ import { Center } from './style'
 import {
   Link
 } from "react-router-dom";
+import Deposit from '../Deposit'
 
 const CardGeneral = () => {
 
@@ -25,6 +26,9 @@ const CardGeneral = () => {
         </Col>
         <Col span={24}>
           <MakeDeposit />
+        </Col>
+        <Col span={24}>
+          <Deposit />
         </Col>
         <Col span={24}>
           <Center>

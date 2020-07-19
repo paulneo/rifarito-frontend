@@ -2,7 +2,8 @@ import React, { useContext} from 'react';
 import { Card, Upload, Button, Input } from 'antd'
 import { Title, Divider, Question, QuestionText, Text } from './style'
 import { QuestionOutlined } from '@ant-design/icons';
-import  Context  from '../../brain/context'
+import  Context  from '../../context'
+
 const Deposit = () => {
   const { setModal } = useContext(Context)
 

@@ -36,7 +36,12 @@ const NumberRaffles = () => {
               onClick={() => handleClick("minus")}
             />
             {/* <Number>{buyer.quantity}</Number> */}
-            <InputNumber value={buyer.quantity} type={'number'} onChange={onChangeQuantity} style={{margin:'0px 10px'}} />
+            <InputNumber
+              value={buyer.quantity}
+              type={"number"}
+              onChange={onChangeQuantity}
+              style={{ margin: "0px 10px" }}
+            />
             <Button
               type="primary"
               shape="circle"
@@ -47,7 +52,9 @@ const NumberRaffles = () => {
         </Col>
         <Col span={24}>
           <Center>
-            <Tag color="#3F5AA6">Total: { formatter.format(buyer.quantity * 2) }</Tag>
+            <Tag color="#3F5AA6">
+              Total: {formatter.format(buyer.quantity * 2)}
+            </Tag>
           </Center>
         </Col>
       </Row>
